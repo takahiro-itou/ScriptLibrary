@@ -66,7 +66,8 @@ dnl
 m4_include([.M4/ConfigDirectory.m4])
 
 MYAC_CUSTOMIZE_LIBRARY_DIR([Lib])
-MYAC_CUSTOMIZE_INCLUDE_DIR([Include], [ScriptLibrary])
+MYAC_CUSTOMIZE_INCLUDE_DIR(
+    [Include], [ScriptLibrary], [.Config], [Config.h])
 
 dnl----------------------------------------------------------------
 dnl

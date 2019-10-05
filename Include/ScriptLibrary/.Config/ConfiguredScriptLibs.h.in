@@ -1,0 +1,54 @@
+//  -*-  coding: utf-8; mode: c++  -*-  //
+/*************************************************************************
+**                                                                      **
+**                  ---  The Script Core Library.  ---                  **
+**                                                                      **
+**          Copyright (C), 2006-2019, Takahiro Itou                     **
+**          All Rights Reserved.                                        **
+**                                                                      **
+*************************************************************************/
+
+/*************************************************************************
+**                                                                      **
+**  This program is free software: you can redistribute it and/or       **
+**  modify it under the terms of the GNU General Public License         **
+**  as published by the Free Software Foundation, either version 3      **
+**  of the License, or (at your option) any later version.              **
+**                                                                      **
+**  This program is distributed in the hope that it will be useful,     **
+**  but WITHOUT ANY WARRANTY; without even the implied warranty of      **
+**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                **
+**  See the GNU General Public License for more details.                **
+**                                                                      **
+**  You should have received a copy of the GNU General Public License   **
+**  along with this program. If not, see                                **
+**  <https://www.gnu.org/licenses/>.                                    **
+**                                                                      **
+*************************************************************************/
+
+/**
+**      スクリプトによる設定値が書き込まれるヘッダファイル。
+**
+**      @file       .Config/ConfiguredScriptLibs.h.in
+**/
+
+#if !defined( SCRIPTCORE_CONFIG_INCLUDED_CONFIGURED_SCRIPT_LIBS_H )
+#    define   SCRIPTCORE_CONFIG_INCLUDED_CONFIGURED_SCRIPT_LIBS_H
+
+//========================================================================
+//
+//    Name Space.
+//
+
+/**
+**    スクリプトによって設定された名前空間。
+**/
+
+#define     SCRIPT_CORE_NAMESPACE           @SCRIPTLIBS_CNF_NAMESPACE@
+
+#define     SCRIPT_CORE_NAMESPACE_BEGIN     \
+    namespace  @SCRIPTLIBS_CNF_NAMESPACE@  {
+
+#define     SCRIPT_CORE_NAMESPACE_END       }
+
+#endif
